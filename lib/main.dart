@@ -1,4 +1,4 @@
-// Flutter Layout Challenge
+// Widget Properties - Profile Image
 
 import 'package:flutter/material.dart';
 
@@ -14,35 +14,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: <Widget>[
-              Container(
-                height: double.infinity,
-                color: Colors.lightGreen,
-                child: Text('Container 1'),
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/forestwander.jpg'),
               ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      height: 80,
-                      width: 80,
-                      color: Colors.cyanAccent,
-                    ),
-                    Container(
-                      height: 80,
-                      width: 80,
-                      color: Colors.cyan,
-                    ),
-                  ],
+              Text(
+                  'Narain Mu',
+                style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
                 ),
-              ),
-              Container(
-                color: Colors.amber,
-                height: double.infinity,
-                child: Text('Container 2'),
               ),
             ],
           ),
