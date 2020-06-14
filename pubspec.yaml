@@ -22,5 +22,12 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/forestwander.jpg
+    - images/
 
+  fonts:
+  - family: Sriracha
+    fonts:
+    - asset: fonts/Sriracha-Regular.ttf
+  - family: Source Sans Pro
+    fonts:
+    - asset: fonts/SourceSansPro-Regular

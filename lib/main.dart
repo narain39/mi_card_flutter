@@ -1,4 +1,4 @@
-// Widget Properties - Profile Image
+// Widget Properties - Fonts added
 
 import 'package:flutter/material.dart';
 
@@ -23,11 +23,25 @@ class MyApp extends StatelessWidget {
               Text(
                   'Narain Mu',
                 style: TextStyle(
+                  fontFamily: 'Sriracha',
                   fontSize: 40,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+
+              Text(
+                'CEO',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 20,
+                  letterSpacing: 3,
+                  color: Colors.yellow,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+
+
             ],
           ),
         ),
