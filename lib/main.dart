@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50,
@@ -40,52 +41,44 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(
+                  color: Colors.white,
+                ),
+              ),
 
               Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Padding(
-                  padding: EdgeInsets.all(25.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(Icons.phone,
-                      color: Colors.teal,),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text('+1 123 456 7890',
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20,
-                      ),)
-                    ],
+                child: ListTile(
+                  leading: Icon(Icons.phone,
+                    color: Colors.teal,
                   ),
-                ),
-              ),
-
-              Card(
-//                padding: EdgeInsets.all(10),
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.email,
-                      color: Colors.teal,),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text('narain.mu@samy.com',
+                   title: Text('+1 123 456 7890',
                       style: TextStyle(
                         color: Colors.teal,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20,
                       ),)
-                  ],
-                ),
+                )
               ),
 
-
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(Icons.email,
+                    color: Colors.teal,),
+                  title: Text('narain.mu@samy.com',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20,
+                    ),),
+                )
+              ),
             ],
           ),
         ),
@@ -93,4 +86,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
